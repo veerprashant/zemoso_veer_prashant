@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="ExtentReport.ExtentReporterNG"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="/home/prav/IdeaProjects/AdvancedSeleniumNew/src/test/java/Screenshot/TestClass.java">
+        <classes>
+            <class name="Screenshot.TestClass">
+            <methods>
+                <include name="verifyText"/>
+                <include name="TC2"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
