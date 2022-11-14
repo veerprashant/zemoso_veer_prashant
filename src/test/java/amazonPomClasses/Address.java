@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Address {
-@FindBy (xpath = "//a[@data-testid=\"cpe-yourAccount-header\"]") private WebElement yourAccount;
+//@FindBy (xpath = "//a[@data-testid=\"cpe-yourAccount-header\"]") private WebElement yourAccount;
 @FindBy(xpath = "(//div[@class=\"a-box ya-card--rich\"])[4]") private WebElement yourAddress;
 @FindBy (xpath="//div[@class=\"a-box first-desktop-address-tile\"]") private WebElement addAddress;
 @FindBy (xpath="//input[@id=\"address-ui-widgets-enterAddressFullName\"]") private WebElement name;
@@ -19,7 +19,7 @@ public class Address {
 
 @FindBy (xpath="//input[@id=\"address-ui-widgets-landmark\"]") private WebElement landMark;
 
-@FindBy (xpath="(//input[@class=\"a-button-input\"])[4]") private WebElement submitAddress;
+@FindBy (xpath="//span[@id=\"address-ui-widgets-form-submit-button\"]") private WebElement submitAddress;
 
 @FindBy (xpath = "//div[@id=\"ya-myab-display-address-block-0\"]") private  WebElement verifyAddress;
 
@@ -33,11 +33,11 @@ public  Address(WebDriver driver){
 }
 
 
-public void clickOnYourAccount(){
-    yourAccount.click();
-}
+//public void clickOnYourAccount(){
+//    yourAccount.click();
+//}
 
-public void clickOnYourAddress(){
+public void clickOnYourAddress() {
     yourAddress.click();
 }
     public void clickOnAddAddress(){
