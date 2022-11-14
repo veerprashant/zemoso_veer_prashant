@@ -1,11 +1,15 @@
 Feature: Amazon Assignment with Login
 
+  Background:
+    Given User Launch browser
+    When User Open URl
+
 
 
 @scenario1
- Scenario Outline: Select Past one year orders
-    Given User Launch browser
-    When User Open URl "<URL>"
+ Scenario: Select Past one year orders
+#    Given User Launch browser
+#    When User Open URl "<URL>"
     And User select amazon prime delivery check box
     Then User get date of first displayed item
     When User Go to your orders
@@ -19,12 +23,8 @@ Feature: Amazon Assignment with Login
    And  Enter House number as "<HouseNo>"
    And Enter Area as "<Area>"
    And Enter Landmark as "<LandMark>"
-
-
-
-
-
     Then User Verify Address is Added
+
 
     Examples:
     |URL|Name|MobileNumber|PinCode|HouseNo|Area|LandMark|

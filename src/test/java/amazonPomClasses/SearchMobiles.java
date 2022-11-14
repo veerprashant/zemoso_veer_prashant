@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class SearchMobiles {
 
     @FindBy (xpath = "//input[@id='twotabsearchtextbox']") private WebElement searchBar;
-    @FindBy (xpath = "(//div[@class=\"a-section a-spacing-small a-spacing-top-small\"])[23]") private WebElement lastItem;
+    @FindBy (xpath = "(//div[@class=\"a-section a-spacing-small a-spacing-top-small\"])[21]") private WebElement lastItem;
     @FindBy (xpath = "//input[@id=\"nav-search-submit-button\"]") private WebElement search;
 
 public SearchMobiles(WebDriver driver)

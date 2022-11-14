@@ -17,10 +17,11 @@ public Verify(WebDriver driver){
     PageFactory.initElements(driver,this);
 }
 
-public void clickOnAddToCart(){
+public void clickOnAddToCart()  {
     addToCart.click();
+
 }
-    public void clickOnGoToCart(){
+    public void clickOnGoToCart() {
 goToCart.click();
     }
     public void verifyQuantityInCart(){
