@@ -11,7 +11,7 @@ public class ErrorHandling {
 
     String str=null;
 
-    public void div() {
+    public void div() throws NullPointerException,ArithmeticException,ArrayIndexOutOfBoundsException {
 
         try {
 
