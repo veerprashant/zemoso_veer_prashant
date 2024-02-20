@@ -1,4 +1,4 @@
-package Assignment_1;
+package Assignment_1_2;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
